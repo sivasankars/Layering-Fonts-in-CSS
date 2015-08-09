@@ -1,0 +1,60 @@
+@font-face {
+	font-family: 'Regular';
+	src: url("fonts/Homestead-Regular.ttf");
+}
+
+@font-face {
+	font-family: 'One';
+	src: url("fonts/Homestead-One.ttf");
+}
+
+@font-face {
+	font-family: 'Two';
+	src: url("fonts/Homestead-Two.ttf");
+}
+
+@font-face {
+	font-family: 'Three';
+	src: url("fonts/Homestead-Three.ttf");
+}
+
+@font-face {
+	font-family: 'Display';
+	src: url("fonts/Homestead-Display.ttf");
+}
+
+@font-face {
+	font-family: 'Inline';
+	src: url("fonts/Homestead-Inline.ttf");
+}
+
+div {
+	display: block;
+	position: relative;
+}
+
+h1 {
+	font: 5em 'Display';
+	color: #6B6B6B;
+	margin-left: .5em;
+}
+
+h1::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: .5em;
+	content: attr(text);
+	font-family: 'Two';
+	color: #d00000;
+}
+
+h1::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: .5em;
+	content: attr(text);
+	font-family: 'Three';
+	color: #6B6B6B;
+}
